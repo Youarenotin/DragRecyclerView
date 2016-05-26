@@ -8,7 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.youarenotin.dragrecylerview.Bean.ItemTest;
-import com.youarenotin.dragrecylerview.IItemTouch;
+import com.youarenotin.dragrecylerview.Interface.IItemTouch;
 import com.youarenotin.dragrecylerview.R;
 
 import java.util.ArrayList;

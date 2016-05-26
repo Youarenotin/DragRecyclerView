@@ -39,9 +39,13 @@ public class OnItemTouchListenerImpl implements RecyclerView.OnItemTouchListener
         public boolean onSingleTapUp(MotionEvent e) {
             if (view instanceof RecyclerView) {
                 View childViewUnder = ((RecyclerView) view).findChildViewUnder(e.getX(), e.getY());
+                if ( childViewUnder==null)
+                    return false;
                 RecyclerView.ViewHolder childViewHolder = ((RecyclerView) view).getChildViewHolder(childViewUnder);
-                onItemClick(childViewHolder);
-                return true;
+                if (childViewHolder!=null){
+                    onItemClick(childViewHolder);
+                    return true;
+                }
             }
             return false;
         }
@@ -51,7 +55,10 @@ public class OnItemTouchListenerImpl implements RecyclerView.OnItemTouchListener
             super.onLongPress(e);
             if (view instanceof RecyclerView) {
                 View childViewUnder = ((RecyclerView) view).findChildViewUnder(e.getX(), e.getY());
+                if (childViewUnder==null)
+                    return;
                 RecyclerView.ViewHolder childViewHolder = ((RecyclerView) view).getChildViewHolder(childViewUnder);
+                if (childViewHolder!=null)
                 onItemLongClick(childViewHolder);
             }
         }

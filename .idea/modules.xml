@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/DragRecylerView.iml" filepath="$PROJECT_DIR$/DragRecylerView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DragRecyclerView.iml" filepath="$PROJECT_DIR$/DragRecyclerView.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

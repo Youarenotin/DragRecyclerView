@@ -1,7 +1,7 @@
-package com.youarenotin.dragrecylerview;
+package com.youarenotin.dragrecylerview.Interface;
 
 /**
- * Created by dell on 5/25 0025.
+ * Created by lubo on 5/25 0025.
  */
 public interface IItemTouch {
     void onMove(int from, int to);
